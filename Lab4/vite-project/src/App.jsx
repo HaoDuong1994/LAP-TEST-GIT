@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ImageItem from './component/itemImage'
+import MainImage from './component/mainImage'
 
 function App() {
   const [heroCurrent, setHeroValue] = useState('https://cdn.vox-cdn.com/thumbor/SbX1VbxJhxijxD1tzRTJ8uq38P4=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19101461/spider_man_far_from_home_peter_parker_1562394390.jpg');
@@ -34,31 +35,29 @@ function App() {
       name:'Wanda',
       src: 'https://i.bbcosplay.com/14934/scarlet-whitch.jpg'
     },
+    {
+      id:6,
+      name:'Doctor Strange',
+      src: 'https://static.onecms.io/wp-content/uploads/sites/6/2016/10/dr-strange.jpg'
+    }
   ]
-  console.log(heroCurrent)
   
-  function handleSuperHero (){
-    setHeroValue(heroList1.src)
+  function handleSuperHero (src){
+    setHeroValue(src)
   }
 
   return (
     <>
+      <MainImage className="main-image" src ={heroCurrent}/>
       <div>
-        <img className="main-image" src={heroCurrent}></img>
-      </div>
-      <div>
-
         {
           heroList1.map(function(hero){
             console.log(hero.src)
-            return <ImageItem onClick={handleSuperHero}className="item-image" src={hero.src} />
+            return <ImageItem onClick={()=>{handleSuperHero(hero.src)}}className="item-image" src={hero.src} />
           })
-        }
-        
-        
+        }   
       </div>
-      <br></br>
-      
+      <br></br>      
     </>
   )
 }
