@@ -1,0 +1,9 @@
+.cart-icon-wrap{
+    width: 24px;
+    height:24px;
+}
+.cart-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+}
