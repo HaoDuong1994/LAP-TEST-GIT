@@ -13,12 +13,16 @@ function App() {
     setProductIncart(newProductsIncart);
   }
   console.log(productsIncart);
+  function updateCart(updatedProductsInCart) {
+    setProductIncart(updatedProductsInCart);
+  }
+
   return (
     <>
       <Cart productsIncart={productsIncart} />
       <ProductList products={products} addProduct={addProduct} />
       <h2 className="heading-product-colected">Giỏ hàng</h2>
-      <CartList productsIncart={productsIncart} />
+      <CartList productsIncart={productsIncart} updateCart={updateCart} />
     </>
   );
 }
