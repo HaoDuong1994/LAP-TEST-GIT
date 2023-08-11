@@ -17,7 +17,8 @@ function App() {
 
   useEffect(() => {
     const makeRequest = async () => {
-      const res = await fetch(`https://reqres.in/api/users?page=${page}`);
+      const res = await fetch(`https://reqres.in/api/users?page
+      =${page}`);
       const resData = await res.json();
       setData(resData);
     };
