@@ -41,15 +41,16 @@ function App(props) {
       title: object,
       isComplete: false,
     };
+
     setTodos(...todos, newsTodo);
   }
-
+  console.log(todos);
   return (
     <>
       <h2>Todo List </h2>
       <hr></hr>
       <TodosContext.Provider value={todos}>
-        <TodoInput className="input-element" />
+        <TodoInput addTodoItem={addTodoItem} className="input-element" />
         <TodoList />
       </TodosContext.Provider>
     </>

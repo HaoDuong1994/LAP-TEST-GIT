@@ -1,18 +1,23 @@
 import "./InputElement.css";
 import { useState } from "react";
-function TodoInput() {
+function TodoInput(props) {
+  console.log(props.addTodoItem);
   const [isValueChar, setValue] = useState(true);
+  let inputValue = "";
+  console.log(inputValue);
   function onChangHandler(e) {
-    let inputValue = e.target.value;
-    if (inputValue.includes("@")) {
+    if (e.target.value.includes("@")) {
       setValue(false);
     } else {
       setValue(true);
       inputValue = e.target.value;
+      console.log(inputValue);
     }
-    console.log(inputValue);
   }
-  function handleAddTodo() {}
+  function handleAddTodo() {
+    console.log(inputValue);
+    props.addTodoItem(inputValue);
+  }
   return (
     <div>
       <input onChange={onChangHandler} type="text" placeholder="Enter data" />
