@@ -1,12 +1,9 @@
 import "./TodoItem.css";
-import { TodosContext } from "../App";
-import { useContext } from "react";
-import { todoContext } from "./TodoList";
-function TodoItem() {
-  const { todo } = useContext(todoContext);
+
+function TodoItem(props) {
   return (
     <div className="todo-item">
-      <p>{todo.title}</p>
+      <p>{props.data.title}</p>
       <button className="btn">Delete</button>
       <button className="btn">Edit</button>
     </div>

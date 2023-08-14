@@ -33,6 +33,16 @@ function App(props) {
       title: "Đi uống TS",
       isComplete: false,
     },
+    {
+      id: 4,
+      title: "Đi uống TS",
+      isComplete: false,
+    },
+    {
+      id: 4,
+      title: "Đi uống TS",
+      isComplete: false,
+    },
   ]);
 
   function addTodoItem(object) {
