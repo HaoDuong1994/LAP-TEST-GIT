@@ -1,0 +1,32 @@
+.pokemon-list{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.pokemon-detail{
+  height: 300px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.pokemon-name{
+  text-align: center;
+}
+
+.pokemon-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+}
+.heading-pokemon-name{
+  color: red;
+}
+.pokemon-img{
+  height: 400px;
+  width: 300px;
+  border: solid 2px;
+}

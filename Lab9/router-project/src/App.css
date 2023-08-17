@@ -1,0 +1,16 @@
+.header{
+    display:flex;
+    height:70px;
+    justify-content: space-between;
+    background-color: gray;
+    align-items: center;
+}
+
+.nav_container{
+    display: flex;
+    gap: 2rem
+}
+
+.active-item{
+    background-color: red;
+}
