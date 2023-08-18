@@ -19,15 +19,22 @@ function PokemonPage() {
     setSearch(event.target.value);
   };
   console.log(search);
-  const filterPokemon = pokemonList.filter((newPokemon) => {
-    return newPokemon.name === search;
-  });
+  let filterPokemon = [];
+  if (search === "") {
+    filterPokemon = [...pokemonList];
+  } else {
+    filterPokemon = pokemonList.filter((pokemon) => {
+      return pokemon.name === search;
+    });
+  }
+  // const filterPokemon = pokemonList.filter((newPokemon) => {
+  //   return newPokemon.name === search;
+  // });
   console.log(filterPokemon);
   return (
     <div>
       <PokemonSearch handleSearch={handleSearch} />
-      <PokemonList pokemonList={pokemonList} />
-      <PokemonFilter newPokemon={filterPokemon} />
+      <PokemonList pokemonList={filterPokemon} />
     </div>
   );
 }
