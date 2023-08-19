@@ -1,5 +1,11 @@
+import ProductList from "../Component/Product/ProductList";
+
 function ProductPage() {
-  return <div>Hello from Product Page</div>;
+  return (
+    <div>
+      <ProductList />
+    </div>
+  );
 }
 
 export default ProductPage;
