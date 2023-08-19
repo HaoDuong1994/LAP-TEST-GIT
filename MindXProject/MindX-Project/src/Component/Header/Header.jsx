@@ -1,14 +1,23 @@
 import "./Header.css";
+import { Link, NavLink } from "react-router-dom";
 function Header() {
   return (
     <div>
       <header className="header">
         <div>Logo</div>
         <nav className="nav-item">
-          <div>Trang chủ</div>
-          <div>Sản phẩm</div>
-          <div>Phụ Kiện</div>
-          <div>Liên hệ</div>
+          <div>
+            <NavLink to="/">Trang chủ</NavLink>
+          </div>
+          <div>
+            <NavLink to="/product">Sản Phẩm</NavLink>
+          </div>
+          <div>
+            <NavLink to="/accessory">Phụ kiện</NavLink>
+          </div>
+          <div>
+            <NavLink to="/contact">Liên hệ</NavLink>
+          </div>
         </nav>
         <div>
           <input type="text" placeholder="Tìm kiếm sản phẩm" />

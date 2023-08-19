@@ -6,6 +6,9 @@ import "./App.css";
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainPage from "./Page/MainPage";
+import ProductPage from "./Page/ProductPage";
+import AccessoryPage from "./Page/AccessoryPage";
+import ContactPage from "./Page/ContactPage";
 function App() {
   useEffect(() => {
     document.title = "Shop quần áo";
@@ -16,6 +19,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<MainPage />} />
+          <Route path="/product" element={<ProductPage />} />
+          <Route path="/accessory" element={<AccessoryPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Router>
     </>

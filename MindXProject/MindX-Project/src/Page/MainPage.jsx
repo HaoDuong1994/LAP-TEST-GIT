@@ -5,7 +5,7 @@ function MainPage() {
     <div className="main-page">
       <img className="cover-img" src={CoverImg2} />
       <div className="main-context">
-        <h2>Giới Thiêu</h2>
+        <h2>Giới Thiệu</h2>
         <h4>I. Lịch sử hình thành</h4>
         <p>
           Adam Store ra đời từ 2012, khởi đầu ở một cửa hàng nhỏ trên phố Lò
@@ -23,7 +23,50 @@ function MainPage() {
           Store có đến 5 sizes phù hợp cho người từ 55-85kg. Chúng tôi muốn đảm
           bảo bạn luôn có thể chọn được một chiếc áo mặc vừa với người.
         </p>
-        <img />
+        <img
+          className="center"
+          src="https://file.hstatic.net/1000366669/file/one01939_ccb95bf788a04f238cf7828273c22b13_grande.jpg"
+        />
+        <h4>2. Hệ thống hơn 71 cửa hàng toàn quốc</h4>
+        <div>
+          Adam Store giờ đây có hệ thống hơn 60 cửa hàng trên 35 tỉnh thành Việt
+          Nam và vẫn đang tiếp tục mở rộng phủ kín Việt Nam. Với việc hỗ trợ mua
+          hàng online, khách hàng hoàn toàn có thể sở hữu được trang phục Adam
+          Store một cách dễ dàng.
+        </div>
+        <img
+          className="center"
+          src="https://binbadecor.vn/wp-content/uploads/2022/03/thiet-ke-shop-quan-ao-2.jpg"
+        />
+        <h4>4. Phom dáng được tối ưu cho người Việt</h4>
+        <div>
+          Adam Store qua 5 năm đã có hơn 40 lần điều chỉnh các phom dáng thiết
+          kế dựa trên sự phản hồi của khách hàng và ý kiến của các chuyên gia
+          hơn 20 năm kinh nghiệp. Chúng tôi đã tạo ra được những mẫu phù hợp
+          nhất cho khách hàng để che dấu đi những nhược điểm của người Việt.
+        </div>
+        <img
+          className="center"
+          src="https://www.deco-crystal.com/wp-content/uploads/2021/11/thiet-ke-shop-thoi-trang-nam.jpg"
+        />
+        <h4>5. Hơn 500,000 khách hàng tin tưởng</h4>
+        <div>
+          Chúng tôi đã vinh dự được làm bạn đồng hành với hơn 400.000 chú rể,
+          hơn 100.000 các doanh nhân, giám đốc, lãnh đạo cấp cao và hàng nghìn
+          người nổi tiếng trên khắp đất nước Việt Nam, và cả nước ngoài.
+        </div>
+        <img
+          className="center"
+          src="https://gotrangtri.vn/wp-content/uploads/2020/07/thiet-ke-shop-quan-ao.jpg"
+        />
+        <div>
+          Hơn hết, chúng tôi hiểu rằng nhu cầu của mỗi quý khách hàng là tìm ra
+          được những sản phẩm đẹp không chỉ về mẫu mã, kiểu dáng, chất liệu mà
+          hợp lý về giá thành. Hãy để Adam Store mang tất cả những điều đó đến
+          với quý vị khách hàng!
+        </div>
+        <br></br>
+        <div>Sự hài lòng của quí vị là niềm vinh hạnh của chúng tôi!</div>
       </div>
     </div>
   );
