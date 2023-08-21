@@ -12,21 +12,9 @@ function ProductList() {
       />
       <h2>Tất cả sản phẩm</h2>
       <div className="list-item-product">
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
+        {productList.map((productItem) => {
+          return <ProductItem productItem={productItem} />;
+        })}
       </div>
     </div>
   );

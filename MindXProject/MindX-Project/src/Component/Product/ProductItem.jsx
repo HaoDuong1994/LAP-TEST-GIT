@@ -1,5 +1,6 @@
 import "./product.css";
-function ProductItem() {
+function ProductItem(props) {
+  console.log(props);
   return (
     <div className="item-product">
       <h4
